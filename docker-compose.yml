@@ -1,0 +1,9 @@
+version: '3'
+services:
+   bioacoustics-notebook:
+      image: aot29/bioacoustics-notebook:latest
+      container_name: audiogramdb-examples-notebook
+      ports:
+        - "9081:8888"
+      volumes:
+        - ".:/home/jovyan"
